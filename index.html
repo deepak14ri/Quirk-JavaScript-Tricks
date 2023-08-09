@@ -1,0 +1,37 @@
+<script>
+  /* JavaScript Tricks */
+
+  //1. Unique Array
+  const arr = [1, 1, 7, 3, 4, 3, 4, 5, 6];
+  const uniqArr = [...new Set(arr)];
+  console.log(uniqArr);
+
+  //2. Boolean Convert
+  const isTrue = !0; //true
+  const alsoFalse = !!0; //false
+
+  console.log(isTrue, alsoFalse);
+
+  //3. Convert to String or integer
+  var val = 5 + "";
+  console.log(val, typeof val);
+  var val = "5" - 0;
+  console.log(val, typeof val);
+
+  //Float to integer Convert
+  const int = 19.8;
+  console.log(int | 0);
+
+  //Remove Last Digits
+  const num = (1553 / 10) | 0;
+  console.log(num);
+
+  //Truncate an Array
+  let arrValue = [0, 1, 2, 3, 4, 5];
+  arrValue.length = 3;
+  console.log(arrValue);
+
+  //Last Item in an Array
+  let newArr = [1, 2, 3, 4, 5, 6];
+  console.log(newArr.slice(-1));
+</script>
